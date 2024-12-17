@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    background-color: black;
+    color: lightgray;
+    width: 100%;
+    height: 50px;
+    font-size: 12pt;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.small_ham {
+    display: flex;
+    gap: 30px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+#hamburger {
+    position: absolute;
+    top: 10px;
+    left: 5%;
+}
+
+.menubar {
+    margin-top: 100px;
+    background-color: black;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top:-60px;
+    padding: 30px;
+    z-index: 700;
+}
+
+.menubar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav_links {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 10px 50px;
+}
+
+.nav_links li {
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    list-style: none;
+    margin-left: 60px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    padding-top: 40px;
+}
+
+.banner {
+    padding-top:20PX ;
+    background-size: cover;
+    height: 90vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+#one {
+    background-image: url('https://images.indianexpress.com/2024/09/WhatsApp-Image-2024-09-09-at-11.43.46-PM.jpeg');
+    color: white;
+}
+
+#two {
+    background-image: url('https://images.macrumors.com/t/t0HGgkcxSch3BjyR0h1ouAm-pTM=/1600x0/article-new/2024/09/iphone-16-design.jpg');
+}
+
+#three {
+    background-image: url('https://cdn.thewirecutter.com/wp-content/media/2024/05/ipad-2048px-2555.jpg');
+}
+
+.category {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.category .box {
+    text-align: center;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+.category .box a {
+    text-decoration: none;
+    font-size: 14pt;
+    color: white;
+}
+
+
+#box1 {
+    background-image: url('https://miro.medium.com/v2/resize:fit:1400/format:webp/0*mq5V5YzzGLGt28jF.jpg');
+}
+
+#box2 {
+    background-image: url('https://imgs.search.brave.com/jlXSvRovWS44uYXUUdwYFEQX4KjUGAkBzX3z5_sqJ1Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/emRuZXQuY29tL2Ev/aW1nL3Jlc2l6ZS9h/YWNmNmQ1OTBhNGU4/MmI1MGUzYzNhMzhk/ZjhkZGQ2ZDEyNWI2/ZmU0LzIwMjQvMTEv/MTQvMjhlNTBmNTIt/ZDQxZC00NTVmLWJj/NGItNzk1YzY0MzM4/OTY3L3NjcmVlbnNo/b3QtMjAyNC0xMS0x/NC1hdC0zLTA0LTI2/LXBtLXJlbW92ZWJn/LXByZXZpZXcucG5n/P2F1dG89d2VicCZ3/aWR0aD0xMjgw');
+    
+    color: white;
+}
+
+#box3 {
+    background-image: url('https://9to5mac.com/wp-content/uploads/sites/6/2021/10/MacBook-Pro-2021.jpg?quality=82&strip=all&w=1024');
+}
+
+#box4 {
+    background-image: url('https://images.macrumors.com/t/uUNx0xv4GtIGDOAkFOI9E4rtcvI=/1600x900/smart/article-new/2021/11/homepod-mini-color-bars.jpg');
+    color: black;
+}
+
+#box2 .label {
+    color: red;
+    font-size: 14pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer {
+    background-color: rgb(216, 217, 217);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: gray;
+}
+
+@media only screen and (min-width: 851px) {
+    #small_apple {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:850px) {
+    .navbar {
+        position: inline;
+        background-color: black;
+        color: lightgray;
+        width: 100%;
+        height: 40px;
+        font-size: 12pt;
+    }
+    
+    .nav_links{
+        display: none;
+    }
+
+    ul {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        padding: 10px ;
+    }
+    
+    li {
+        margin-left: 33px;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .main .banner{
+        text-align: center;
+        height: 80vh;
+        width: 100%;
+        background-size: cover;
+        padding-top: 20px;
+    }
+    
+    .banner a {
+        font-size: 16pt;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    #one{
+        background-image: url('https://dbz-images.dubizzle.com/images/2024/09/27/a4d9bd78ca0e438d8ae51746b8ae3fa7-.jpeg?impolicy=lpv');
+        color: white;
+        height: 80vh;
+        width: 100%;
+    }
+    #two {
+        background-image: url('./optimized_iphone16_image.png');
+        height: 80vh;
+        width: 100%;
+    }
+    
+    #three {
+        background-image: url('https://cdn.thewirecutter.com/wp-content/media/2024/05/ipad-2048px-2555.jpg');
+        height: 80vh;
+        width: 100%;
+    }
+    
+    .category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .category .box {
+        text-align: center;
+        height: 80vh;
+        width: 100%;
+        background-size: cover;
+        padding-top: 20px;
+        color: white;
+    }
+    
+    .category .box a { 
+        text-decoration: none;
+        font-size: 14pt;
+        padding-top: 20px;
+    }
+
+    
+    #box1 {
+        background-image: url('https://miro.medium.com/v2/resize:fit:1400/format:webp/0*mq5V5YzzGLGt28jF.jpg');
+    }
+    
+    #box2 {
+        background-image: url('https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121202-apple-watch-series-10.png');
+        color: white;
+    }
+    
+    #box3 {
+        background-image: url('https://9to5mac.com/wp-content/uploads/sites/6/2021/10/MacBook-Pro-2021.jpg?quality=82&strip=all&w=1024');
+    }
+    
+    #box4 {
+        background-image: url('https://images.macrumors.com/t/uUNx0xv4GtIGDOAkFOI9E4rtcvI=/1600x900/smart/article-new/2021/11/homepod-mini-color-bars.jpg');
+        color: black;
+    }
+    
+    #box2 .label {
+        color: red;
+        font-size: 14pt;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    a:hover {
+        text-decoration: underline !important;
+    }
+    
+    .footer {
+        background-color: rgb(216, 217, 217);
+        width: 100%;
+        height: auto;
+    }
+    
+    .footer .container {
+        width: 70%;
+        margin:  auto;
+        padding-top: 20px;
+    }
+    
+    .footer .container > * {
+        font-size: 10pt;
+        color: gray;
+    }
+    
+}
